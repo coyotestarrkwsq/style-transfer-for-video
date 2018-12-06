@@ -1,0 +1,25 @@
+-implementation based on "Real-Time Neural Style Transfer for Videos" by Haozhi Huang et al 
+
+-use DAVIS dataset for training, not all parameter based on the paper
+
+-requires tensorflow, cv2, and scipy 
+
+-download vgg weights for loss_net.py at http://www.vlfeat.org/matconvnet/models/beta16/imagenet-vgg-verydeep-19.mat
+
+-all training scripts in training code folder is the roughly the same, they are largely based on fast-style-transfer (https://github.com/lengstrom/fast-style-transfer) by lengstrom 
+
+-need to generate optical flow from the DAVIS dataset first, can be done by gen_flow.py
+
+-need to change the file directory for training (sorry the scripts are not refractored as we ran out of time)
+
+-style.py does transformation of images with trained models (the models folder contain pretrained weights used in our preject and the style folder contains the paintings used for our training in our project)
+
+-training done with titan x gpu
+
+-inference with stylizing_net.py can be done with cpu, albeit slower
+
+-video made by first stylizing the frames of interest and then use ffmpeg to generate the videos from images
+
+
+
+
