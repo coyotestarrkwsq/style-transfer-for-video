@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/wangsq/CS4243/DAVIS_model/starry_night_model/model.ckpt"
+all_model_checkpoint_paths: "/home/wangsq/CS4243/DAVIS_model/starry_night_model/model.ckpt"
